@@ -1,0 +1,16 @@
+package studio1;
+
+import java.util.Scanner;
+
+public class leapyear {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Please enter a year");
+        int year = in.nextInt();
+        boolean leapYear = (((year % 4==0) && (year% 100!= 0))||(year%400==0));
+        in.close();
+        System.out.println(year + " is a lear year: "+ leapYear);
+    }
+
+}
